@@ -85,13 +85,19 @@ int main(int argc, char**argv) {
         return 1;
     }
     // add O_DIRECT flag
-    int disk = open(device, O_RDWR | O_SYNC | O_DIRECT);
+    int disk = open(device, O_RDWR | O_DIRECT | O_SYNC);
     if (disk < 0) {
         perror("Failed to open device\n");
         return 0;
     }
     struct timeval start_write, end_write, start_read, end_read;
-    char buffer[size];
+    void *buffer;
+    if (posix_memalign(&buffer, 4096, size) != 0) {
+	perror("Failed to allocate buffer");
+	close(disk);
+	free(buffer);
+	return 0;
+    }
     memset(buffer, 0x55, size);
     
     int io_operations = ((disk_size - size) / (size + stride)) + 1;
@@ -104,7 +110,13 @@ int main(int argc, char**argv) {
             size_t offset = (rand() % (upper_random - lower_random)) + lower_random;
             lseek(disk, offset, SEEK_SET);
         }
-        write(disk, buffer, size);
+        int write_results = write(disk, buffer, size);
+	if (write_results == -1) {
+		perror("Write error");
+		close(disk);
+		free(buffer);
+		return 0;
+	}
         fsync(disk);
         if (stride != 0) {
             lseek(disk, stride, SEEK_CUR);
@@ -113,17 +125,31 @@ int main(int argc, char**argv) {
     }
     gettimeofday(&end_write, NULL);
     
-    char buffer2[size];
+    void *buffer2;
+    if (posix_memalign(&buffer2, 4096, size) != 0) {
+	perror("Failed to allocate buffer");
+	free(buffer);
+	free(buffer2);
+	close(disk);
+	return 0;
+    }
     lseek(disk, 0, SEEK_SET);
     gettimeofday(&start_read, NULL);
     i = 0;
     while (i < io_operations) {
-        read(disk, buffer2, size);
         if (random) {
             size_t offset = (rand() % (upper_random - lower_random)) + lower_random;
             lseek(disk, offset, SEEK_SET);
         }
-        else if (stride != 0) {
+        int read_results = read(disk, buffer2, size);
+	if (read_results == -1) {
+		perror("read_error");
+		close(disk);
+		free(buffer);
+		free(buffer2);
+		return 0;
+	}
+        if (stride != 0) {
             lseek(disk, stride, SEEK_CUR);
         }
         i++;
@@ -137,7 +163,7 @@ int main(int argc, char**argv) {
     gettimeofday(&end_read, NULL);
     if (debug) {
         for (int i = 0; i < 100; i++) {
-            printf("%02x ", (unsigned char)buffer2[i]);
+            printf("%02x ", ((unsigned char *)buffer2)[i]);
             if ((i + 1) % 16 == 0) {
                 printf("\n");  // Add a newline every 16 bytes for readability
             }
@@ -149,6 +175,8 @@ int main(int argc, char**argv) {
     double time_read = (end_read.tv_sec - start_read.tv_sec) + ((double)(end_read.tv_usec - start_read.tv_usec) / 1000000);
     printf("[Device %s, size %zu, stride %zu, random %d, lower bound %zu, upper bound %zu]: write of %f, read of %f\n", device, size, stride, random, lower_random, upper_random, time_write, time_read);
     close(disk);
+    free(buffer);
+    free(buffer2);
     return 1;
 }
 

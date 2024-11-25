@@ -3,7 +3,7 @@
 gb=1073741824
 mb=1048576
 kb=1024
-device="./t.txt"
+device="/dev/sda2"
 # Run first round of tests
 echo "Round one" > results.txt
 echo "Starting size"
