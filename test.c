@@ -108,6 +108,7 @@ int main(int argc, char**argv) {
     while (i < io_operations) {
         if (random) {
             size_t offset = (rand() % (upper_random - lower_random)) + lower_random;
+	    offset = ((offset + 4095) / 4096) * 4096;
             lseek(disk, offset, SEEK_SET);
         }
         int write_results = write(disk, buffer, size);
@@ -139,6 +140,7 @@ int main(int argc, char**argv) {
     while (i < io_operations) {
         if (random) {
             size_t offset = (rand() % (upper_random - lower_random)) + lower_random;
+	    offset = ((offset + 4095) / 4096) * 4096;
             lseek(disk, offset, SEEK_SET);
         }
         int read_results = read(disk, buffer2, size);
