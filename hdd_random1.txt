@@ -1,0 +1,10 @@
+Round one
+Starting Random IO
+[Device /dev/sda2, size 204800, stride 0, random 1, lower bound 0, upper bound 1073537024]: write of 131.255870, read of 78.910745
+[Device /dev/sda2, size 512000, stride 0, random 1, lower bound 0, upper bound 1073229824]: write of 56.617804, read of 32.812830
+[Device /dev/sda2, size 1048576, stride 0, random 1, lower bound 0, upper bound 1072693248]: write of 40.195219, read of 20.759245
+[Device /dev/sda2, size 10485760, stride 0, random 1, lower bound 0, upper bound 1063256064]: write of 11.699538, read of 7.978528
+[Device /dev/sda2, size 26214400, stride 0, random 1, lower bound 0, upper bound 1047527424]: write of 9.380128, read of 7.575084
+[Device /dev/sda2, size 52428800, stride 0, random 1, lower bound 0, upper bound 1021313024]: write of 8.221919, read of 6.221429
+[Device /dev/sda2, size 78643200, stride 0, random 1, lower bound 0, upper bound 995098624]: write of 8.934452, read of 5.857773
+[Device /dev/sda2, size 104857600, stride 0, random 1, lower bound 0, upper bound 968884224]: write of 7.904271, read of 5.698105

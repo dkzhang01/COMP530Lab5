@@ -13,6 +13,7 @@ int main(int argc, char**argv) {
     int c;
     int debug = 0;
     int random = 0;
+    int half_size = 0;
     size_t size = 1 << 20; //Set default value 1mb
     size_t disk_size = 1<<30; // set default 1 gb
     size_t stride = 0; //set default value 1 mb
@@ -23,6 +24,10 @@ int main(int argc, char**argv) {
         switch (c) {
             case 'd':
                 strcpy(device, optarg);
+		if (strcmp(device, "/dev/sdb1") == 0) {
+			printf("Running in range 512 mb\n");
+			half_size = 1;
+		}
                 break;
             case 's':
                 size = atoi(optarg);
@@ -106,19 +111,23 @@ int main(int argc, char**argv) {
     lseek(disk, 0, SEEK_SET);
     gettimeofday(&start_write, NULL);
     while (i < io_operations) {
+	if (half_size) {
+		size_t offset = lseek(disk, 0, SEEK_CUR) % 536870912;
+		lseek(disk, offset, SEEK_SET);
+	}
         if (random) {
             size_t offset = (rand() % (upper_random - lower_random)) + lower_random;
 	    offset = ((offset + 4095) / 4096) * 4096;
             lseek(disk, offset, SEEK_SET);
         }
         int write_results = write(disk, buffer, size);
+	fsync(disk);
 	if (write_results == -1) {
 		perror("Write error");
 		close(disk);
 		free(buffer);
 		return 0;
 	}
-        fsync(disk);
         if (stride != 0) {
             lseek(disk, stride, SEEK_CUR);
         }
@@ -138,6 +147,10 @@ int main(int argc, char**argv) {
     gettimeofday(&start_read, NULL);
     i = 0;
     while (i < io_operations) {
+	if (half_size) {
+		size_t offset = lseek(disk, 0, SEEK_CUR) % 536870912;
+		lseek(disk, offset, SEEK_SET);
+	}
         if (random) {
             size_t offset = (rand() % (upper_random - lower_random)) + lower_random;
 	    offset = ((offset + 4095) / 4096) * 4096;

@@ -1,0 +1,58 @@
+Round one
+Starting size
+Running in range 512 mb
+[Device /dev/sdb1, size 4096, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 297.535933, read of 26.828062
+Running in range 512 mb
+[Device /dev/sdb1, size 204800, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 12.932787, read of 4.681915
+Running in range 512 mb
+[Device /dev/sdb1, size 512000, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 8.636142, read of 4.021668
+Running in range 512 mb
+[Device /dev/sdb1, size 1048576, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 6.156407, read of 3.114994
+Running in range 512 mb
+[Device /dev/sdb1, size 10485760, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.279643, read of 3.129100
+Running in range 512 mb
+[Device /dev/sdb1, size 26214400, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.325093, read of 3.059079
+Running in range 512 mb
+[Device /dev/sdb1, size 52428800, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.108912, read of 2.936749
+Running in range 512 mb
+[Device /dev/sdb1, size 78643200, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.157074, read of 2.923897
+Running in range 512 mb
+[Device /dev/sdb1, size 104857600, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.140706, read of 2.798294
+Starting Round 2
+Running in range 512 mb
+[Device /dev/sdb1, size 4096, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 318.360950, read of 13.433215
+Running in range 512 mb
+[Device /dev/sdb1, size 204800, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 11.825959, read of 2.681449
+Running in range 512 mb
+[Device /dev/sdb1, size 512000, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 9.787074, read of 4.399890
+Running in range 512 mb
+[Device /dev/sdb1, size 1048576, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 9.368456, read of 3.984356
+Running in range 512 mb
+[Device /dev/sdb1, size 10485760, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.690189, read of 3.173375
+Running in range 512 mb
+[Device /dev/sdb1, size 26214400, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.622017, read of 3.075033
+Running in range 512 mb
+[Device /dev/sdb1, size 52428800, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.265271, read of 2.944250
+Running in range 512 mb
+[Device /dev/sdb1, size 78643200, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.294632, read of 2.936653
+Running in range 512 mb
+[Device /dev/sdb1, size 104857600, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 5.043892, read of 2.789794
+Starting Round 3
+Running in range 512 mb
+[Device /dev/sdb1, size 4096, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 318.194427, read of 13.067199
+Running in range 512 mb
+[Device /dev/sdb1, size 204800, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 12.191403, read of 2.799206
+Running in range 512 mb
+[Device /dev/sdb1, size 512000, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 10.933701, read of 4.063384
+Running in range 512 mb
+[Device /dev/sdb1, size 1048576, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 8.150078, read of 3.229064
+Running in range 512 mb
+[Device /dev/sdb1, size 10485760, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 3.705596, read of 3.351170
+Running in range 512 mb
+[Device /dev/sdb1, size 26214400, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 3.699259, read of 3.264797
+Running in range 512 mb
+[Device /dev/sdb1, size 52428800, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 4.286266, read of 2.978703
+Running in range 512 mb
+[Device /dev/sdb1, size 78643200, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 4.690752, read of 2.940319
+Running in range 512 mb
+[Device /dev/sdb1, size 104857600, stride 0, random 0, lower bound 0, upper bound 1073741824]: write of 4.566219, read of 2.800924

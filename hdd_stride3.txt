@@ -1,0 +1,37 @@
+Round one
+Starting stride
+[Device /dev/sda2, size 4096, stride 4096, random 0, lower bound 0, upper bound 1073741824]: write of 1098.966201, read of 7.277500
+[Device /dev/sda2, size 4096, stride 204800, random 0, lower bound 0, upper bound 1073741824]: write of 46.059013, read of 5.432468
+[Device /dev/sda2, size 4096, stride 512000, random 0, lower bound 0, upper bound 1073741824]: write of 5.678652, read of 5.432833
+[Device /dev/sda2, size 4096, stride 1048576, random 0, lower bound 0, upper bound 1073741824]: write of 5.672831, read of 5.432548
+[Device /dev/sda2, size 4096, stride 26214400, random 0, lower bound 0, upper bound 1073741824]: write of 0.441694, read of 0.166354
+[Device /dev/sda2, size 4096, stride 52428800, random 0, lower bound 0, upper bound 1073741824]: write of 0.129639, read of 0.124733
+[Device /dev/sda2, size 4096, stride 104857600, random 0, lower bound 0, upper bound 1073741824]: write of 0.072142, read of 0.000527
+[Device /dev/sda2, size 102400, stride 4096, random 0, lower bound 0, upper bound 1073741824]: write of 89.474345, read of 5.440821
+[Device /dev/sda2, size 102400, stride 204800, random 0, lower bound 0, upper bound 1073741824]: write of 34.408162, read of 5.432462
+[Device /dev/sda2, size 102400, stride 512000, random 0, lower bound 0, upper bound 1073741824]: write of 5.746372, read of 5.424250
+[Device /dev/sda2, size 102400, stride 1048576, random 0, lower bound 0, upper bound 1073741824]: write of 5.701760, read of 5.407550
+[Device /dev/sda2, size 102400, stride 26214400, random 0, lower bound 0, upper bound 1073741824]: write of 0.492655, read of 0.191185
+[Device /dev/sda2, size 102400, stride 52428800, random 0, lower bound 0, upper bound 1073741824]: write of 0.152479, read of 0.132882
+[Device /dev/sda2, size 102400, stride 104857600, random 0, lower bound 0, upper bound 1073741824]: write of 0.092287, read of 0.002719
+[Device /dev/sda2, size 1048576, stride 4096, random 0, lower bound 0, upper bound 1073741824]: write of 14.119438, read of 5.440916
+[Device /dev/sda2, size 1048576, stride 204800, random 0, lower bound 0, upper bound 1073741824]: write of 13.548223, read of 5.432463
+[Device /dev/sda2, size 1048576, stride 512000, random 0, lower bound 0, upper bound 1073741824]: write of 9.963536, read of 5.440846
+[Device /dev/sda2, size 1048576, stride 1048576, random 0, lower bound 0, upper bound 1073741824]: write of 14.492566, read of 5.432420
+[Device /dev/sda2, size 1048576, stride 26214400, random 0, lower bound 0, upper bound 1073741824]: write of 0.742489, read of 0.383121
+[Device /dev/sda2, size 1048576, stride 52428800, random 0, lower bound 0, upper bound 1073741824]: write of 0.462432, read of 0.241125
+[Device /dev/sda2, size 1048576, stride 104857600, random 0, lower bound 0, upper bound 1073741824]: write of 0.232133, read of 0.062721
+[Device /dev/sda2, size 4194304, stride 4096, random 0, lower bound 0, upper bound 1073741824]: write of 8.874690, read of 5.382411
+[Device /dev/sda2, size 4194304, stride 204800, random 0, lower bound 0, upper bound 1073741824]: write of 8.477710, read of 5.424112
+[Device /dev/sda2, size 4194304, stride 512000, random 0, lower bound 0, upper bound 1073741824]: write of 6.662130, read of 5.424183
+[Device /dev/sda2, size 4194304, stride 1048576, random 0, lower bound 0, upper bound 1073741824]: write of 6.478729, read of 5.432507
+[Device /dev/sda2, size 4194304, stride 26214400, random 0, lower bound 0, upper bound 1073741824]: write of 1.204191, read of 0.874311
+[Device /dev/sda2, size 4194304, stride 52428800, random 0, lower bound 0, upper bound 1073741824]: write of 0.730314, read of 0.499343
+[Device /dev/sda2, size 4194304, stride 104857600, random 0, lower bound 0, upper bound 1073741824]: write of 0.467717, read of 0.235729
+[Device /dev/sda2, size 10485760, stride 4096, random 0, lower bound 0, upper bound 1073741824]: write of 6.681675, read of 5.424068
+[Device /dev/sda2, size 10485760, stride 204800, random 0, lower bound 0, upper bound 1073741824]: write of 6.771869, read of 5.407281
+[Device /dev/sda2, size 10485760, stride 512000, random 0, lower bound 0, upper bound 1073741824]: write of 6.139548, read of 5.390595
+[Device /dev/sda2, size 10485760, stride 1048576, random 0, lower bound 0, upper bound 1073741824]: write of 6.022835, read of 5.423995
+[Device /dev/sda2, size 10485760, stride 26214400, random 0, lower bound 0, upper bound 1073741824]: write of 1.977864, read of 1.632530
+[Device /dev/sda2, size 10485760, stride 52428800, random 0, lower bound 0, upper bound 1073741824]: write of 1.233746, read of 0.999264
+[Device /dev/sda2, size 10485760, stride 104857600, random 0, lower bound 0, upper bound 1073741824]: write of 0.818316, read of 0.574315

@@ -1,0 +1,18 @@
+Round one
+Starting Random IO
+Running in range 512 mb
+[Device /dev/sdb1, size 204800, stride 0, random 1, lower bound 0, upper bound 1073537024]: write of 13.267191, read of 4.823302
+Running in range 512 mb
+[Device /dev/sdb1, size 512000, stride 0, random 1, lower bound 0, upper bound 1073229824]: write of 8.284167, read of 3.974847
+Running in range 512 mb
+[Device /dev/sdb1, size 1048576, stride 0, random 1, lower bound 0, upper bound 1072693248]: write of 6.601570, read of 3.404469
+Running in range 512 mb
+[Device /dev/sdb1, size 10485760, stride 0, random 1, lower bound 0, upper bound 1063256064]: write of 3.526812, read of 2.236822
+Running in range 512 mb
+[Device /dev/sdb1, size 26214400, stride 0, random 1, lower bound 0, upper bound 1047527424]: write of 4.028212, read of 2.988573
+Running in range 512 mb
+[Device /dev/sdb1, size 52428800, stride 0, random 1, lower bound 0, upper bound 1021313024]: write of 4.820193, read of 2.967347
+Running in range 512 mb
+[Device /dev/sdb1, size 78643200, stride 0, random 1, lower bound 0, upper bound 995098624]: write of 4.743486, read of 2.739520
+Running in range 512 mb
+[Device /dev/sdb1, size 104857600, stride 0, random 1, lower bound 0, upper bound 968884224]: write of 4.578299, read of 2.630596
